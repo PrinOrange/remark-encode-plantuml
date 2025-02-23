@@ -1,6 +1,6 @@
 {
   "name": "remark-refer-plantuml",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Unified/Remark plugin to automatically refer PlantUML diagrams into embeddable image URLs. Transform UML code blocks into visual diagrams.",
   "main": "./dist/index.js",
   "type": "module",

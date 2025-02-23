@@ -17,7 +17,7 @@ const remarkReferPlantUml: unified.Plugin<[PlantUMLOptions], mdast.Root> = funct
     ...opts,
   };
 
-  return async function transformer(tree) {
+  return function transformer(tree) {
     visit(tree, 'code', (node, index, parent) => {
       if (node.type === 'code' && node.lang?.toLowerCase() === 'plantuml' && parent && index) {
         try {

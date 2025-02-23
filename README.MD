@@ -37,10 +37,7 @@ import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
 import remarkReferPlantUml from 'remark-refer-plantuml';
 
-const processor = unified()
-  .use(remarkParse)
-  .use(remarkReferPlantUml)
-  .use(remarkStringify);
+const processor = unified().use(remarkParse).use(remarkReferPlantUml).use(remarkStringify);
 
 const output = await processor.process(input);
 ```
@@ -69,7 +66,7 @@ Specifies the output format. Defaults to `'png'`. Only `'svg'` and `'png'` are s
 
 #### `darkMode?: boolean`
 
-Enables **dark mode** for diagrams. Default to `false`.
+Enables dark mode for diagrams. Default to `false`.
 
 #### `url?: string`
 

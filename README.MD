@@ -1,8 +1,8 @@
 # Remark Encoding PlantUML
 
-[![npm version](https://img.shields.io/npm/v/remark-encode-plantuml?style=flat-square)](https://www.npmjs.com/package/remark-encode-plantuml)
-[![license](https://img.shields.io/github/license/PrinOrange/remark-encode-plantuml?style=flat-square)](./LICENSE)
-[![bundle size](https://img.shields.io/bundlephobia/min/remark-encode-plantuml?style=flat-square)](https://bundlephobia.com/package/remark-encode-plantuml)
+[![npm version](https://img.shields.io/npm/v/remark-encoding-plantuml?style=flat-square)](https://www.npmjs.com/package/remark-encoding-plantuml)
+[![license](https://img.shields.io/github/license/PrinOrange/remark-encoding-plantuml?style=flat-square)](./LICENSE)
+[![bundle size](https://img.shields.io/bundlephobia/min/remark-encoding-plantuml?style=flat-square)](https://bundlephobia.com/package/remark-encoding-plantuml)
 [![unified compatibility](https://img.shields.io/badge/unified.js-100%25%20compatible-9cf?style=flat-square)](https://unifiedjs.com)
 
 A Unified/Remark plugin to automatically encode PlantUML diagrams into embeddable image URLs. Transform UML code blocks into visual diagrams.
@@ -10,7 +10,7 @@ A Unified/Remark plugin to automatically encode PlantUML diagrams into embeddabl
 ## Installation
 
 ```bash
-npm install remark-encode-plantuml
+npm install remark-encoding-plantuml
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ Use this plugin in your code,
 import {unified} from 'unified';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
-import remarkEncodingPlantUml from 'remark-encode-plantuml';
+import remarkEncodingPlantUml from 'remark-encoding-plantuml';
 
 const processor = unified()
   .use(remarkParse)

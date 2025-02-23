@@ -24,7 +24,7 @@ This is the PlantUML diagram.
 
 ```plantuml
 @startuml
-Bob -> Alice : Hello Remark!
+Bob -> Alice : hello
 @enduml
 ```
 ````
@@ -50,8 +50,9 @@ It will output,
 ```markdown
 ## Hello World
 
-This is the PlantUML diagram.
-![PlantUML Diagram](https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuU8gp69mB2v9ICrB0NeF)
+This is the PlantUML graph.
+
+![PlantUML Diagram](https://www.plantuml.com/plantuml/png/SoWkIImgAStDuULooazIqBLJSCp9J4vLi5B8ICt9oUVbSaZDIm5A0m00)
 ```
 
 ## API

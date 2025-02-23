@@ -8,8 +8,8 @@ importers:
   .:
     dependencies:
       plantuml-coder:
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: ^0.0.2
+        version: 0.0.2
       unified:
         specifier: ^11.0.5
         version: 11.0.5
@@ -547,10 +547,10 @@ packages:
         integrity: sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==,
       }
 
-  plantuml-coder@0.0.1:
+  plantuml-coder@0.0.2:
     resolution:
       {
-        integrity: sha512-icP0GDw5uT3qcdetOHx0hGVQcpIExw2btYzWqQwVZQSDG8t5cMYWSY+NPy1Ko5vuRrxk0AU/F+IPa+1U04y+9g==,
+        integrity: sha512-pui4CqoT4YXcLotS3jvCNtkgMLpe5Pc2TuwFNAyelX3aSvpyxXkFeWc6Ry8CRDaTMeAA6OCwb6rqLbaxUsN3BA==,
       }
 
   prettier@3.5.2:
@@ -975,7 +975,7 @@ snapshots:
 
   pako@2.1.0: {}
 
-  plantuml-coder@0.0.1:
+  plantuml-coder@0.0.2:
     dependencies:
       pako: 2.1.0
 

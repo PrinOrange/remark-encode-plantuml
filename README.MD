@@ -1,4 +1,4 @@
-# remark-encode-plantuml
+# Remark Encoding PlantUML
 
 [![npm version](https://img.shields.io/npm/v/remark-encode-plantuml?style=flat-square)](https://www.npmjs.com/package/remark-encode-plantuml)
 [![license](https://img.shields.io/github/license/PrinOrange/remark-encode-plantuml?style=flat-square)](./LICENSE)
@@ -35,11 +35,11 @@ Use this plugin in your code,
 import {unified} from 'unified';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
-import remarkEncodePlantUml from 'remark-encode-plantuml';
+import remarkEncodingPlantUml from 'remark-encode-plantuml';
 
 const processor = unified()
   .use(remarkParse)
-  .use(remarkEncodePlantUml, {format: 'svg'})
+  .use(remarkEncodingPlantUml, {format: 'svg'})
   .use(remarkStringify);
 
 const output = await processor.process(input);
@@ -56,9 +56,9 @@ This is the PlantUML diagram.
 
 ## API
 
-This package is **ESM-only** and provides a default export: `remarkEncodePlantUml`. You can integrate it with `unified.js`, `react-markdown` and so on.
+This package is **ESM-only** and provides a default export: `remarkEncodingPlantUml`. You can integrate it with `unified.js`, `react-markdown` and so on.
 
-### `unified().use(remarkEncodePlantUml, options?)`
+### `unified().use(remarkEncodingPlantUml, options?)`
 
 ### Options
 

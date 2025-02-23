@@ -9,7 +9,7 @@ interface PlantUMLOptions {
   darkMode?: boolean;
 }
 
-const remarkEncodePlantUml: unified.Plugin<[PlantUMLOptions], mdast.Root> = function (opts) {
+const remarkEncodingPlantUml: unified.Plugin<[PlantUMLOptions], mdast.Root> = function (opts) {
   const options: PlantUMLOptions = {
     format: 'png',
     url: 'https://www.plantuml.com/plantuml',
@@ -47,4 +47,4 @@ const remarkEncodePlantUml: unified.Plugin<[PlantUMLOptions], mdast.Root> = func
   };
 };
 
-export default remarkEncodePlantUml;
+export default remarkEncodingPlantUml;

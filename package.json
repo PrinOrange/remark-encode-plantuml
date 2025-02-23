@@ -1,5 +1,5 @@
 {
-  "name": "remark-encode-plantuml",
+  "name": "remark-encoding-plantuml",
   "version": "0.0.1",
   "description": "A Unified/Remark plugin to automatically encode PlantUML diagrams into embeddable image URLs. Transform UML code blocks into visual diagrams.",
   "main": "./dist/index.js",
@@ -23,12 +23,12 @@
     "unified"
   ],
   "bugs": {
-    "url": "https://github.com/PrinOrange/remark-encode-plantuml/issues"
+    "url": "https://github.com/PrinOrange/remark-encoding-plantuml/issues"
   },
-  "homepage": "https://github.com/PrinOrange/remark-encode-plantuml",
+  "homepage": "https://github.com/PrinOrange/remark-encoding-plantuml",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PrinOrange/remark-encode-plantuml"
+    "url": "https://github.com/PrinOrange/remark-encoding-plantuml"
   },
   "author": "",
   "license": "MIT",

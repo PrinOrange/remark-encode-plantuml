@@ -32,13 +32,13 @@ const remarkReferPlantUml: unified.Plugin<[PlantUMLOptions], mdast.Root> = funct
               {
                 type: 'image',
                 url: fullUrl.href,
-                alt: 'PlantUML Diagram',
               },
             ],
           } as mdast.Paragraph;
         } catch (error: any) {
           parent.children[index] = {
-            type: 'text',
+            type: 'code',
+            lang: 'plaintext',
             value: `Error rendering PlantUML: ${error.message}`,
           };
         }

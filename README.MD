@@ -39,7 +39,7 @@ import remarkReferPlantUml from 'remark-refer-plantuml';
 
 const processor = unified()
   .use(remarkParse)
-  .use(remarkReferPlantUml, {format: 'svg'})
+  .use(remarkReferPlantUml)
   .use(remarkStringify);
 
 const output = await processor.process(input);

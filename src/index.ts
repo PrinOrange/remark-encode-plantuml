@@ -34,7 +34,7 @@ const remarkReferPlantUml: unified.Plugin<[PlantUMLOptions], mdast.Root> = funct
                 url: fullUrl.href,
               },
             ],
-          }
+          };
         } catch (error: any) {
           parent.children[index] = {
             type: 'code',

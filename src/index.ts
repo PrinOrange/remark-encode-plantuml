@@ -9,6 +9,12 @@ interface PlantUMLOptions {
   darkMode?: boolean;
 }
 
+function isStringOver80KB(str: string) {
+  const encoder = new TextEncoder();
+  const bytes = encoder.encode(str);
+  return bytes.length > 80 * 1024;
+}
+
 const remarkReferPlantUml: unified.Plugin<[PlantUMLOptions], mdast.Root> = function (opts) {
   const options: PlantUMLOptions = {
     format: 'png',
@@ -25,6 +31,12 @@ const remarkReferPlantUml: unified.Plugin<[PlantUMLOptions], mdast.Root> = funct
           const encoded = PlantUmlCoder.encode(node.value);
           const url = options.url;
           const fullUrl = new URL(`${url}/${format}/${encoded}`, url);
+
+          if (isStringOver80KB(fullUrl.href)) {
+            console.warn(
+              `The encoded PlantUML URL exceeds 80KB and may trigger errors due to browser URL length limits: ${node.value.substring(0, 200)} ...`,
+            );
+          }
 
           parent.children[index] = {
             type: 'paragraph',

@@ -82,3 +82,21 @@ test('Dark SVG', async (t) => {
   const actualContent = transformed.toString();
   assert.equal(actualContent, expectContent);
 });
+
+test('Dark SVG', async (t) => {
+  const inputContent = await fs.readFileSync(
+    path.resolve(__dirname, './cases/dark-svg/input.md'),
+    'utf-8',
+  );
+  const expectContent = await fs.readFileSync(
+    path.resolve(__dirname, './cases/dark-svg/expect.md'),
+    'utf-8',
+  );
+  const processor = unified()
+    .use(remarkParse)
+    .use(remarkReferPlantUml, {format: 'svg', darkMode: true})
+    .use(remarkStringify);
+  const transformed = await processor.process(inputContent);
+  const actualContent = transformed.toString();
+  assert.equal(actualContent, expectContent);
+});

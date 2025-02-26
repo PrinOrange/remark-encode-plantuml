@@ -72,6 +72,10 @@ Enables dark mode for diagrams. Default to `false`.
 
 The Plantuml server used to generate the diagram hyperlinks, you can use your deployed one. Default to the official server instance [https://www.plantuml.com/plantuml](https://www.plantuml.com/plantuml) if you are ok with sending data to it.
 
+#### `silent?: boolean`
+
+Ignore all warnings. Default to `false`.
+
 ## Contributing
 
 We welcome contributions! Please read our [Contribution Guide](CONTRIBUTION.md) before submitting PRs.

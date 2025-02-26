@@ -7,6 +7,7 @@ interface PlantUMLOptions {
   url?: string;
   format?: 'png' | 'svg';
   darkMode?: boolean;
+  silent?: boolean;
 }
 
 function isStringOver80KB(str: string) {
@@ -20,6 +21,7 @@ const remarkReferPlantUml: unified.Plugin<[PlantUMLOptions], mdast.Root> = funct
     format: 'png',
     url: 'https://www.plantuml.com/plantuml',
     darkMode: false,
+    silent: false,
     ...opts,
   };
 
@@ -32,9 +34,9 @@ const remarkReferPlantUml: unified.Plugin<[PlantUMLOptions], mdast.Root> = funct
           const url = options.url;
           const fullUrl = new URL(`${url}/${format}/${encoded}`, url);
 
-          if (isStringOver80KB(fullUrl.href)) {
+          if (!options.silent && isStringOver80KB(fullUrl.href)) {
             console.warn(
-              `The encoded PlantUML URL exceeds 80KB and may trigger errors due to browser URL length limits: ${node.value.substring(0, 200)} ...`,
+              `[remark-refer-plantuml]: The encoded PlantUML URL exceeds 80KB and may trigger errors due to browser URL length limits: ${node.value.substring(0, 200)} ...`,
             );
           }
 

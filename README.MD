@@ -47,7 +47,7 @@ It will output,
 ```markdown
 ## Hello World
 
-This is the PlantUML graph.
+This is the PlantUML diagram.
 
 ![](https://www.plantuml.com/plantuml/png/SoWkIImgAStDuULooazIqBLJSCp9J4vLi5B8ICt9oUVbSaZDIm5A0m00)
 ```
